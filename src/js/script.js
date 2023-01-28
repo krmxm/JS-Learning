@@ -32,7 +32,7 @@ console.log(4 + " - object"); //строка
 console.log(4 + +"5"); //type - number, + перед кавычками (унарный плюс) превращает строку в число
 
 let incr = 10,
-    decr = 10;
+	decr = 10;
 
 incr++; // Инкремент - увеличение значения на единицу, постфиксная форма записи
 decr--; // Декремент - уменьшение значения на единицу, постфиксная форма записи
@@ -59,9 +59,9 @@ const personalMovieDB = {
 };
 
 const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+	  b = prompt('На сколько оцените его?', ''),
+	  c = prompt('Один из последних просмотренных фильмов?', ''),
+	  d = prompt('На сколько оцените его?', '');
 
 
 personalMovieDB.movies[a] = b;
@@ -96,17 +96,17 @@ if (num < 49) {
 
 switch (num) {
   case 49:
-    console.log('Неверно');
-    break;
+	console.log('Неверно');
+	break;
   case 100:
-    console.log('Неверно');
-    break;
+	console.log('Неверно');
+	break;
   case 50:
-    console.log('В точку!');
-    break;
+	console.log('В точку!');
+	break;
   default:
-    console.log('Не в этот раз');
-    break;
+	console.log('Не в этот раз');
+	break;
 } */
 
 
@@ -182,6 +182,37 @@ if (hamburger && cola || fries === 3 && nuggets) {
 
 // Циклы
 
+/*
+1.	while – Проверяет условие перед каждой итерацией.
+2.	do..while – Проверяет условие после каждой итерации.
+3.	for (;;) – Проверяет условие перед каждой итерацией,
+	есть возможность задать дополнительные настройки.
+
+  for (Начало; Условие; Шаг) {
+    // Тело цикла
+    // Тут будет выполняться код
+  }
+
+  while (Условие) {
+    // Тело цикла
+    // Тут будет выполнятся код
+  }
+Чтобы организовать бесконечный цикл, используют
+конструкцию while (true).
+При этом он, как и любой другой цикл, может быть
+прерван директивой break.
+
+Если на данной итерации цикла делать больше
+ничего не надо, но полностью прекращать цикл не
+следует – используют директиву continue.
+
+Обе этих директивы поддерживают метки, которые ставятся
+перед циклом. Метки – единственный способ для break/continue
+выйти за пределы текущего цикла, повлиять на выполнение внешнего.
+Помним, что метки не позволяют прыгнуть в произвольное место кода,
+в JavaScript нет такой возможности.
+*/
+
 /* let num = 50; */
 
 /* while (num <= 55) {
@@ -197,8 +228,8 @@ while (num < 55); */
 
 /* for (let i = 1; i < 10; i++) {
   if (i === 6) {
-    //break;
-    continue;
+	//break;
+	continue;
   }
   
   console.log(i);
@@ -208,24 +239,397 @@ while (num < 55); */
 // Цикл в цикле и метки
 
 for (let i = 0; i < 3; i++) {
-  console.log(i);
-  for (let j = 0; j < 3; j++) {
-    console.log(j);
-  }
+	console.log(i);
+	for (let j = 0; j < 3; j++) {
+		console.log(j);
+	}
 }
 
 // Задача Ёлочка (Астерикс)
 
-let result = '';
+/* let result = '';
 const length = 7;
 
 for (let i = 1; i < length; i++) {
 
-  for (let j = 0; j < i; j++) {
-    result += "*";
-  }
+	for (let j = 0; j < i; j++) {
+		result += "*";
+	}
 
-  result += '\n';
+	result += '\n';
 }
 
-console.log(result);
+console.log(result); */
+
+/* let result = '';
+const lines = 5;
+
+for (let i = 0; i <= lines; i++) {
+  for (let j = 0; j < lines - i; j++) {
+    result += " ";
+  }
+  for (let j=0; j < 2 * i + 1; j++) {
+    result += "*";
+  }
+  result += "\n";
+  
+}
+console.log(result); */
+
+/* let num = 0;
+
+while (num < 3) {
+  console.log(`Число: ${num}`);
+  num++;
+} */
+
+/* for (let num = 0; num < 3; num++) {
+	console.log(`Число: ${num}`);
+} */
+
+
+/* for (let i = 5; i <= 10; i++) {
+  console.log(i);
+}
+
+for (let i = 20; i >= 10; i--) {
+  if (i === 13) {
+    break;
+  }
+  console.log(i);
+}
+
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+let i = 2;
+
+while (i <= 16) {
+  if (i % 2 === 0) {
+    i++;
+    continue;
+  } else {}
+  console.log(i);
+  i++;
+} */
+
+
+/* const arrayOfNumbers = [];
+
+for (let i = 5; i < 11; i++) {
+  arrayOfNumbers[i - 5] = i;
+}
+console.log(arrayOfNumbers);
+
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+  result [i] = arr[i];
+}
+console.log(result); */
+
+/* const data = [5, 10, 'Shopping', 20, 'Homework']; */
+
+/* for (let i = 0; i < data.length; i++) {
+  if (typeof(data[i]) === 'number') {
+    data[i] = data[i] * 2;
+  } else if (typeof(data[i]) === 'string') {
+    data[i] = `${data[i]} - done`;
+  }
+} */
+
+/* const result = [];
+
+for (let i = 1; i <= data.length; i++) {
+    result[i - 1] = data[data.length - i]
+}
+
+console.log(result); */
+
+/* const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+console.log(numberOfFilms);
+
+const personalMovieDB = {
+  'count': numberOfFilms,
+  'movies': {},
+  'actors': {},
+  'genres': [],
+  'privat': false
+}; */
+
+/* for (let i = 0; i < 2; i++) {
+  const a = prompt('Один из последних просмотренных фильмов?', ''),
+	      b = prompt('На сколько оцените его?', '');
+
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+  } else {
+    console.log('error');
+    i--;
+  }
+  
+}
+
+if (personalMovieDB.count < 10) {
+  console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+  console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+  console.log("Вы киноман");
+} else {
+  console.log("Произошла ошибка");
+}
+ 
+console.log(personalMovieDB); */
+
+
+//while
+/* let i = 0;
+while (i < 2){
+  const a = prompt('Один из последних просмотренных фильмов?', ''),
+	      b = prompt('На сколько оцените его?', '');
+
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+  } else {
+    console.log('error');
+    i--;
+  }
+  i++
+}
+
+console.log(personalMovieDB); */
+
+//do..while
+
+/* let i = 0;
+
+do {
+  const a = prompt('Один из последних просмотренных фильмов?', ''),
+	      b = prompt('На сколько оцените его?', '');
+  i++;
+
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+  } else {
+    console.log('error');
+    i--;
+  }
+}
+while (i < 2);
+
+console.log(personalMovieDB); */
+
+//Функции, стрелочные функции
+
+/* let num = 50;
+
+function showFirstMessage(text) {
+    console.log(text);
+    console.log(num);
+}
+
+showFirstMessage("Hello world!");
+console.log(num); */
+
+/* Hello world!
+50
+50 */
+
+/* function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+function ret() {
+    let num = 50;
+
+    //
+
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+const usdCurr = 28;
+const discount = 0.9;
+
+function convert (amount, curr) {
+    return curr * amount;
+}
+
+function promotion(result) {
+    console.log(result * discount);
+}
+
+const res = convert(500, usdCurr);
+promotion(res); */
+
+/* function sayHello(name) {
+    return `Привет, ${name}!`;
+}
+
+sayHello('Антон');
+
+function returnNeighboringNumbers(num) {
+    return [num - 1, num, num + 1];
+}
+
+returnNeighboringNumbers(5);
+
+console.log(getMathResult(10, 5)); */
+
+
+//методы и свойства строк и чисел
+
+/* const str = "test";
+const arr = [1, 2, 4];
+
+console.log(str.length);
+
+console.log(str.toUpperCase());
+
+const logg = "Hello world"; */
+
+/* console.log(logg.slice(6, 11)); //world
+
+console.log(logg.substring(6, 11)); //world */
+
+/* console.log(logg.substr(6, 5)); //Начиная с 6 5 символов
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test)); //числовой вид данных
+console.log(parseFloat(test)); // десятичный */
+
+
+//First app
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+    }
+}
+
+start();
+
+const personalMovieDB = {
+  'count': numberOfFilms,
+  'movies': {},
+  'actors': {},
+  'genres': [],
+  'privat': false
+};
+
+function rememberMyFilms() {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+              b = prompt('На сколько оцените его?', '');
+    
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            i--;
+        }
+    }
+}
+
+rememberMyFilms();
+
+function detectPersonalLevel() {
+    if (personalMovieDB.count < 10) {
+        console.log("Просмотрено довольно мало фильмов");
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+        console.log("Вы классический зритель");
+    } else if (personalMovieDB.count >= 30) {
+        console.log("Вы киноман");
+    } else {
+        console.log("Произошла ошибка");
+    }
+}
+
+detectPersonalLevel();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+}
+
+showMyDB(personalMovieDB.privat);
+
+function writeYourGenres() {
+    for (let i = 1; i <= 3; i++) {
+        const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+        personalMovieDB.genres[i - 1] = genre;
+    }
+}
+
+writeYourGenres();
+
+function calculateVolumeAndArea(num) {
+    if ((num) < 0 || typeof (num) !== 'number' || !Number.isInteger(num)) {
+        return "При вычислении произошла ошибка";
+    }
+
+    let volume = 0,
+        area = 0;
+
+    volume = num * num * num;
+    area = 6 * (num * num);
+
+    return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+    
+}
+
+console.log(calculateVolumeAndArea(5));
+
+function getCoupeNumber(seatNumber) {
+    if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+        return "Ошибка. Проверьте правильность введенного номера места";
+    }
+    if(seatNumber === 0 || seatNumber > 36) {
+        return "Таких мест в вагоне не существует";
+    } 
+    
+    return Math.ceil(seatNumber / 4);
+}
+
+console.log(getCoupeNumber(33));
+
+
+function getTimeFromMinutes(time) {
+    if (typeof (time) !== 'number' || time < 0 || !Number.isInteger(time)) {
+        return "Ошибка, проверьте данные";
+    }
+
+    if (time < 120) {
+        return `${parseInt((time / 60))} час и ${(time % 60) * 60} минут`;
+    }
+}
+
+console.log(getTimeFromMinutes(90));
+
+
+
+
+
