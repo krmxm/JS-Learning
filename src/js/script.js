@@ -622,14 +622,137 @@ function getTimeFromMinutes(time) {
         return "Ошибка, проверьте данные";
     }
 
-    if (time < 120) {
-        return `${parseInt((time / 60))} час и ${(time % 60) * 60} минут`;
+    const hours = Math.floor(time / 60);
+    const minutes = time % 60;
+
+    let hoursStr = '';
+
+    switch (hours) {
+      case 0:
+        hoursStr = 'часов';
+        break;
+      case 1:
+        hoursStr = 'час';
+        break;
+      case 2:
+      case 3:
+      case 4:
+        hoursStr = 'часа';
+        break;
+      default:
+        hoursStr = 'часов';
     }
+
+    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 }
 
 console.log(getTimeFromMinutes(90));
 
 
 
+function findMaxNumber(a, b, c, d) {
+  if (typeof(a) !== 'number' ||
+      typeof(b) !== 'number' ||
+      typeof(c) !== 'number' ||
+      typeof(d) !== 'number' ||
+      arguments < 4) {
+      return 0;
+      // argumets не обязательно
+  }
 
+  return Math.max(a, b, c, d);
+}
 
+console.log(findMaxNumber(1, 2, 3, 4));
+
+function fib(numFib) {
+    if(typeof(numFib) !== 'number' || numFib <= 0 || numFib % 1 !== 0) {
+      return '';
+    }
+
+    let arrNumbers = [0];
+
+    for (let i = 1; i < numFib; i++) {
+      if (i === 1) {
+        arrNumbers.push(1);
+      } else {
+        arrNumbers.push(arrNumbers[i-1] + arrNumbers[i-2]);
+      }
+    }
+
+    return arrNumbers.join(' ');
+}
+
+console.log(fib(4));
+
+// callback - функции
+
+  function learnJS(lang, callback) {
+    console.log(`Я учу: ${lang}`);
+    callback();
+  }
+
+  function done() {
+    console.log('Я прошёл этот урок');
+  }
+
+  learnJS('JavaScript', done);
+
+  // Объекты и дисктруктуризация объктов
+
+  const options = {
+    name: 'test',
+    width: 1024, 
+    height: 1024,
+    colors: {
+      border: 'black',
+      bg: 'red'
+    },
+    makeTest: function() {
+      console.log("Test");
+    } // метод - действие, которое может совершать объект
+  };
+
+  options.makeTest();
+
+  const {border, bg} = options.colors;
+  console.log(border); // диструктуризация
+
+  // Объекты - структура, которая может сохранять в себе любые типы данных в формате ключ - значение
+
+  /* console.log(Object.keys(options).length); // счётчик элементов внутри */
+
+  /* console.log(options.name);
+
+  delete options.name;
+
+  console.log(options); */
+
+/*   let counter = 0; // счётчик
+  for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+      for (let i in options[key]) {
+        console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+        counter++; // счётчик
+      }
+    }
+    else {
+      console.log(`Свойство ${key} имеет значение ${options[key]}`);
+      counter++; // счётчик
+    }
+  }
+
+  console.log(counter); */
+
+  // массивы и псевдомассивы
+
+  const arr = [1, 2, 3, 6, 8, 10];
+
+  /* arr.pop(); // удаляет последний элемент */
+/*   arr.push(10); // добавляет в конец элемент
+
+  console.log(arr); */
+
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
