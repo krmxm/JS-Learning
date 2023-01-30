@@ -518,7 +518,7 @@ console.log(parseFloat(test)); // десятичный */
 
 //First app
 
-let numberOfFilms;
+/* let numberOfFilms;
 
 function start() {
     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
@@ -567,24 +567,24 @@ function detectPersonalLevel() {
     }
 }
 
-detectPersonalLevel();
+detectPersonalLevel(); */
 
-function showMyDB(hidden) {
+/* function showMyDB(hidden) {
     if (!hidden) {
         console.log(personalMovieDB);
     }
 }
 
-showMyDB(personalMovieDB.privat);
+showMyDB(personalMovieDB.privat); */
 
-function writeYourGenres() {
+/* function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
         const genre = prompt(`Ваш любимый жанр под номером ${i}`);
         personalMovieDB.genres[i - 1] = genre;
     }
 }
 
-writeYourGenres();
+writeYourGenres(); */
 
 function calculateVolumeAndArea(num) {
     if ((num) < 0 || typeof (num) !== 'number' || !Number.isInteger(num)) {
@@ -746,13 +746,35 @@ console.log(fib(4));
 
   // массивы и псевдомассивы
 
-  const arr = [1, 2, 3, 6, 8, 10];
+  const arr = [2, 13, 26, 8, 10];
+  arr.sort(compareNum);
+  console.log(arr);
+
+  function compareNum(a, b) {
+    return a - b;
+  }
+  /* arr[90] = 0;
+  console.log(arr.length); // 5, последний индекс + 1
+  console.log(arr); */
 
   /* arr.pop(); // удаляет последний элемент */
 /*   arr.push(10); // добавляет в конец элемент
 
   console.log(arr); */
 
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+/*   for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]); // перебор
   }
+
+  for (let value of arr) {
+    console.log(value); // перебор
+  } */
+
+/*   arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+  }); */
+
+  /* const str = prompt("", "");
+  const products = str.split(", "); // то что ввёл пользователь переводит в массив
+  products.sort(); // сортировка в алфавитном порядке
+  console.log(products.join('; ')); // переводит массив в строку */
