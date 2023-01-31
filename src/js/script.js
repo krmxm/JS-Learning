@@ -801,7 +801,7 @@ console.log(fib(4));
   console.log(copy);
   console.log(obj); */
 
-  function copy(mainObj) {
+/*   function copy(mainObj) {
     let objCopy = {};
 
     let key;
@@ -823,11 +823,11 @@ console.log(fib(4));
 
   const newNumbers = copy(numbers);
 
-  newNumbers.a = 10;
-  newNumbers.c.x = 10;
+  newNumbers.a = 10; */
+  /* newNumbers.c.x = 10; */
 
 /*   console.log(newNumbers);
-  console.log(numbers); */
+  console.log(numbers);
 
   const add = {
     d: 17,
@@ -836,12 +836,12 @@ console.log(fib(4));
 
   const clone = Object.assign({}, add);
 
-  clone.d = 20;
+  clone.d = 20; */
 
 /*   console.log(add);
   console.log(clone); */
 
-  const oldArray = ['a', 'b', 'c'];
+/*   const oldArray = ['a', 'b', 'c'];
   const newArray = oldArray.slice();
   
   newArray[1] = 'afdsfref';
@@ -876,4 +876,61 @@ console.log(fib(4));
   const newObj = {...q};
 
   console.log(newObj);
-  console.log(q);
+  console.log(q); */
+
+const personalPlanPeter = {
+  name: "Peter",
+  age: "29",
+  skills: {
+      languages: ['ru', 'eng'],
+      programmingLangs: {
+          js: '20%',
+          php: '10%'
+      },
+      exp: '1 month', 
+  }, 
+  showAgeAndLangs: function(plan) {
+    const {age} = plan;
+    const {languages} = plan.skills;
+    let str = `Мне ${age} и я владею языками: `;
+
+    languages.forEach(function(lang) {
+      str += `${lang.toUpperCase()} `;
+    });
+
+    console.log(str);
+
+  }
+};
+
+/* function showExperience(plan) {
+  const {exp} = plan.skills;
+  return exp;
+}
+
+showExperience(personalPlanPeter); */
+
+function showProgrammingLangs(plan) {
+  
+  let str = '';
+  const {programmingLangs} = plan.skills;
+  for (let key in programmingLangs) {
+    str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+  }
+
+  return str;
+}
+
+console.log(showProgrammingLangs(personalPlanPeter));
+
+
+
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(arr) {
+    const str = arr.join( );
+
+    return `Семья состоит из: ${str}`;
+}
+
+console.log(showFamily(family));
