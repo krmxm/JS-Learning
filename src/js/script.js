@@ -189,13 +189,13 @@ if (hamburger && cola || fries === 3 && nuggets) {
 	есть возможность задать дополнительные настройки.
 
   for (Начало; Условие; Шаг) {
-    // Тело цикла
-    // Тут будет выполняться код
+	// Тело цикла
+	// Тут будет выполняться код
   }
 
   while (Условие) {
-    // Тело цикла
-    // Тут будет выполнятся код
+	// Тело цикла
+	// Тут будет выполнятся код
   }
 Чтобы организовать бесконечный цикл, используют
 конструкцию while (true).
@@ -266,10 +266,10 @@ const lines = 5;
 
 for (let i = 0; i <= lines; i++) {
   for (let j = 0; j < lines - i; j++) {
-    result += " ";
+	result += " ";
   }
   for (let j=0; j < 2 * i + 1; j++) {
-    result += "*";
+	result += "*";
   }
   result += "\n";
   
@@ -294,14 +294,14 @@ while (num < 3) {
 
 for (let i = 20; i >= 10; i--) {
   if (i === 13) {
-    break;
+	break;
   }
   console.log(i);
 }
 
 for (let i = 2; i <= 10; i++) {
   if (i % 2 === 0) {
-    console.log(i);
+	console.log(i);
   }
 }
 
@@ -309,8 +309,8 @@ let i = 2;
 
 while (i <= 16) {
   if (i % 2 === 0) {
-    i++;
-    continue;
+	i++;
+	continue;
   } else {}
   console.log(i);
   i++;
@@ -336,16 +336,16 @@ console.log(result); */
 
 /* for (let i = 0; i < data.length; i++) {
   if (typeof(data[i]) === 'number') {
-    data[i] = data[i] * 2;
+	data[i] = data[i] * 2;
   } else if (typeof(data[i]) === 'string') {
-    data[i] = `${data[i]} - done`;
+	data[i] = `${data[i]} - done`;
   }
 } */
 
 /* const result = [];
 
 for (let i = 1; i <= data.length; i++) {
-    result[i - 1] = data[data.length - i]
+	result[i - 1] = data[data.length - i]
 }
 
 console.log(result); */
@@ -363,14 +363,14 @@ const personalMovieDB = {
 
 /* for (let i = 0; i < 2; i++) {
   const a = prompt('Один из последних просмотренных фильмов?', ''),
-	      b = prompt('На сколько оцените его?', '');
+		  b = prompt('На сколько оцените его?', '');
 
   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-    personalMovieDB.movies[a] = b;
-    console.log('done');
+	personalMovieDB.movies[a] = b;
+	console.log('done');
   } else {
-    console.log('error');
-    i--;
+	console.log('error');
+	i--;
   }
   
 }
@@ -392,14 +392,14 @@ console.log(personalMovieDB); */
 /* let i = 0;
 while (i < 2){
   const a = prompt('Один из последних просмотренных фильмов?', ''),
-	      b = prompt('На сколько оцените его?', '');
+		  b = prompt('На сколько оцените его?', '');
 
   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-    personalMovieDB.movies[a] = b;
-    console.log('done');
+	personalMovieDB.movies[a] = b;
+	console.log('done');
   } else {
-    console.log('error');
-    i--;
+	console.log('error');
+	i--;
   }
   i++
 }
@@ -412,15 +412,15 @@ console.log(personalMovieDB); */
 
 do {
   const a = prompt('Один из последних просмотренных фильмов?', ''),
-	      b = prompt('На сколько оцените его?', '');
+		  b = prompt('На сколько оцените его?', '');
   i++;
 
   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-    personalMovieDB.movies[a] = b;
-    console.log('done');
+	personalMovieDB.movies[a] = b;
+	console.log('done');
   } else {
-    console.log('error');
-    i--;
+	console.log('error');
+	i--;
   }
 }
 while (i < 2);
@@ -432,8 +432,8 @@ console.log(personalMovieDB); */
 /* let num = 50;
 
 function showFirstMessage(text) {
-    console.log(text);
-    console.log(num);
+	console.log(text);
+	console.log(num);
 }
 
 showFirstMessage("Hello world!");
@@ -444,7 +444,7 @@ console.log(num); */
 50 */
 
 /* function calc(a, b) {
-    return (a + b);
+	return (a + b);
 }
 
 console.log(calc(4, 3));
@@ -452,11 +452,11 @@ console.log(calc(5, 6));
 console.log(calc(10, 6));
 
 function ret() {
-    let num = 50;
+	let num = 50;
 
-    //
+	//
 
-    return num;
+	return num;
 }
 
 const anotherNum = ret();
@@ -466,24 +466,24 @@ const usdCurr = 28;
 const discount = 0.9;
 
 function convert (amount, curr) {
-    return curr * amount;
+	return curr * amount;
 }
 
 function promotion(result) {
-    console.log(result * discount);
+	console.log(result * discount);
 }
 
 const res = convert(500, usdCurr);
 promotion(res); */
 
 /* function sayHello(name) {
-    return `Привет, ${name}!`;
+	return `Привет, ${name}!`;
 }
 
 sayHello('Антон');
 
 function returnNeighboringNumbers(num) {
-    return [num - 1, num, num + 1];
+	return [num - 1, num, num + 1];
 }
 
 returnNeighboringNumbers(5);
@@ -521,11 +521,11 @@ console.log(parseFloat(test)); // десятичный */
 /* let numberOfFilms;
 
 function start() {
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+	numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
-    }
+	while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+		numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+	}
 }
 
 start();
@@ -539,125 +539,125 @@ const personalMovieDB = {
 };
 
 function rememberMyFilms() {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?', ''),
-              b = prompt('На сколько оцените его?', '');
+	for (let i = 0; i < 2; i++) {
+		const a = prompt('Один из последних просмотренных фильмов?', ''),
+			  b = prompt('На сколько оцените его?', '');
     
-        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-            console.log('done');
-        } else {
-            console.log('error');
-            i--;
-        }
-    }
+		if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+			personalMovieDB.movies[a] = b;
+			console.log('done');
+		} else {
+			console.log('error');
+			i--;
+		}
+	}
 }
 
 rememberMyFilms();
 
 function detectPersonalLevel() {
-    if (personalMovieDB.count < 10) {
-        console.log("Просмотрено довольно мало фильмов");
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        console.log("Вы классический зритель");
-    } else if (personalMovieDB.count >= 30) {
-        console.log("Вы киноман");
-    } else {
-        console.log("Произошла ошибка");
-    }
+	if (personalMovieDB.count < 10) {
+		console.log("Просмотрено довольно мало фильмов");
+	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+		console.log("Вы классический зритель");
+	} else if (personalMovieDB.count >= 30) {
+		console.log("Вы киноман");
+	} else {
+		console.log("Произошла ошибка");
+	}
 }
 
 detectPersonalLevel(); */
 
 /* function showMyDB(hidden) {
-    if (!hidden) {
-        console.log(personalMovieDB);
-    }
+	if (!hidden) {
+		console.log(personalMovieDB);
+	}
 }
 
 showMyDB(personalMovieDB.privat); */
 
 /* function writeYourGenres() {
-    for (let i = 1; i <= 3; i++) {
-        const genre = prompt(`Ваш любимый жанр под номером ${i}`);
-        personalMovieDB.genres[i - 1] = genre;
-    }
+	for (let i = 1; i <= 3; i++) {
+		const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+		personalMovieDB.genres[i - 1] = genre;
+	}
 }
 
 writeYourGenres(); */
 
-function calculateVolumeAndArea(num) {
-    if ((num) < 0 || typeof (num) !== 'number' || !Number.isInteger(num)) {
-        return "При вычислении произошла ошибка";
-    }
+/* function calculateVolumeAndArea(num) {
+	if ((num) < 0 || typeof (num) !== 'number' || !Number.isInteger(num)) {
+		return "При вычислении произошла ошибка";
+	}
 
-    let volume = 0,
-        area = 0;
+	let volume = 0,
+		area = 0;
 
-    volume = num * num * num;
-    area = 6 * (num * num);
+	volume = num * num * num;
+	area = 6 * (num * num);
 
-    return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+	return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
     
 }
 
 console.log(calculateVolumeAndArea(5));
 
 function getCoupeNumber(seatNumber) {
-    if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
-        return "Ошибка. Проверьте правильность введенного номера места";
-    }
-    if(seatNumber === 0 || seatNumber > 36) {
-        return "Таких мест в вагоне не существует";
-    } 
+	if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+		return "Ошибка. Проверьте правильность введенного номера места";
+	}
+	if(seatNumber === 0 || seatNumber > 36) {
+		return "Таких мест в вагоне не существует";
+	} 
     
-    return Math.ceil(seatNumber / 4);
+	return Math.ceil(seatNumber / 4);
 }
 
 console.log(getCoupeNumber(33));
 
 
 function getTimeFromMinutes(time) {
-    if (typeof (time) !== 'number' || time < 0 || !Number.isInteger(time)) {
-        return "Ошибка, проверьте данные";
-    }
+	if (typeof (time) !== 'number' || time < 0 || !Number.isInteger(time)) {
+		return "Ошибка, проверьте данные";
+	}
 
-    const hours = Math.floor(time / 60);
-    const minutes = time % 60;
+	const hours = Math.floor(time / 60);
+	const minutes = time % 60;
 
-    let hoursStr = '';
+	let hoursStr = '';
 
-    switch (hours) {
-      case 0:
-        hoursStr = 'часов';
-        break;
-      case 1:
-        hoursStr = 'час';
-        break;
-      case 2:
-      case 3:
-      case 4:
-        hoursStr = 'часа';
-        break;
-      default:
-        hoursStr = 'часов';
-    }
+	switch (hours) {
+	  case 0:
+		hoursStr = 'часов';
+		break;
+	  case 1:
+		hoursStr = 'час';
+		break;
+	  case 2:
+	  case 3:
+	  case 4:
+		hoursStr = 'часа';
+		break;
+	  default:
+		hoursStr = 'часов';
+	}
 
-    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+	return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 }
 
-console.log(getTimeFromMinutes(90));
+console.log(getTimeFromMinutes(90)); */
 
 
 
-function findMaxNumber(a, b, c, d) {
+/* function findMaxNumber(a, b, c, d) {
   if (typeof(a) !== 'number' ||
-      typeof(b) !== 'number' ||
-      typeof(c) !== 'number' ||
-      typeof(d) !== 'number' ||
-      arguments < 4) {
-      return 0;
-      // argumets не обязательно
+	  typeof(b) !== 'number' ||
+	  typeof(c) !== 'number' ||
+	  typeof(d) !== 'number' ||
+	  arguments < 4) {
+	  return 0;
+	  // argumets не обязательно
   }
 
   return Math.max(a, b, c, d);
@@ -666,34 +666,34 @@ function findMaxNumber(a, b, c, d) {
 console.log(findMaxNumber(1, 2, 3, 4));
 
 function fib(numFib) {
-    if(typeof(numFib) !== 'number' || numFib <= 0 || numFib % 1 !== 0) {
-      return '';
-    }
+	if(typeof(numFib) !== 'number' || numFib <= 0 || numFib % 1 !== 0) {
+	  return '';
+	}
 
-    let arrNumbers = [0];
+	let arrNumbers = [0];
 
-    for (let i = 1; i < numFib; i++) {
-      if (i === 1) {
-        arrNumbers.push(1);
-      } else {
-        arrNumbers.push(arrNumbers[i-1] + arrNumbers[i-2]);
-      }
-    }
+	for (let i = 1; i < numFib; i++) {
+	  if (i === 1) {
+		arrNumbers.push(1);
+	  } else {
+		arrNumbers.push(arrNumbers[i-1] + arrNumbers[i-2]);
+	  }
+	}
 
-    return arrNumbers.join(' ');
+	return arrNumbers.join(' ');
 }
 
-console.log(fib(4));
+console.log(fib(4)); */
 
 // callback - функции
 
-  function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
+/*   function learnJS(lang, callback) {
+	console.log(`Я учу: ${lang}`);
+	callback();
   }
 
   function done() {
-    console.log('Я прошёл этот урок');
+	console.log('Я прошёл этот урок');
   }
 
   learnJS('JavaScript', done);
@@ -701,88 +701,88 @@ console.log(fib(4));
   // Объекты и дисктруктуризация объктов
 
   const options = {
-    name: 'test',
-    width: 1024, 
-    height: 1024,
-    colors: {
-      border: 'black',
-      bg: 'red'
-    },
-    makeTest: function() {
-      console.log("Test");
-    } // метод - действие, которое может совершать объект
+	name: 'test',
+	width: 1024, 
+	height: 1024,
+	colors: {
+	  border: 'black',
+	  bg: 'red'
+	},
+	makeTest: function() {
+	  console.log("Test");
+	} // метод - действие, которое может совершать объект
   };
 
   options.makeTest();
 
   const {border, bg} = options.colors;
-  console.log(border); // диструктуризация
+  console.log(border); // диструктуризация */
 
-  // Объекты - структура, которая может сохранять в себе любые типы данных в формате ключ - значение
+// Объекты - структура, которая может сохранять в себе любые типы данных в формате ключ - значение
 
-  /* console.log(Object.keys(options).length); // счётчик элементов внутри */
+/* console.log(Object.keys(options).length); // счётчик элементов внутри */
 
-  /* console.log(options.name);
+/* console.log(options.name);
 
-  delete options.name;
+delete options.name;
 
-  console.log(options); */
+console.log(options); */
 
 /*   let counter = 0; // счётчик
   for (let key in options) {
-    if (typeof(options[key]) === 'object') {
-      for (let i in options[key]) {
-        console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
-        counter++; // счётчик
-      }
-    }
-    else {
-      console.log(`Свойство ${key} имеет значение ${options[key]}`);
-      counter++; // счётчик
-    }
+	if (typeof(options[key]) === 'object') {
+	  for (let i in options[key]) {
+		console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+		counter++; // счётчик
+	  }
+	}
+	else {
+	  console.log(`Свойство ${key} имеет значение ${options[key]}`);
+	  counter++; // счётчик
+	}
   }
 
   console.log(counter); */
 
-  // массивы и псевдомассивы
+// массивы и псевдомассивы
 
-  const arr = [2, 13, 26, 8, 10];
+/*   const arr = [2, 13, 26, 8, 10];
   arr.sort(compareNum);
   console.log(arr);
 
   function compareNum(a, b) {
-    return a - b;
-  }
-  /* arr[90] = 0;
-  console.log(arr.length); // 5, последний индекс + 1
-  console.log(arr); */
+	return a - b;
+  } */
+/* arr[90] = 0;
+console.log(arr.length); // 5, последний индекс + 1
+console.log(arr); */
 
-  /* arr.pop(); // удаляет последний элемент */
+/* arr.pop(); // удаляет последний элемент */
 /*   arr.push(10); // добавляет в конец элемент
 
   console.log(arr); */
 
 /*   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]); // перебор
+	console.log(arr[i]); // перебор
   }
 
   for (let value of arr) {
-    console.log(value); // перебор
+	console.log(value); // перебор
   } */
 
 /*   arr.forEach(function(item, i, arr) {
-    console.log(`${i}: ${item} внутри массива ${arr}`);
+	console.log(`${i}: ${item} внутри массива ${arr}`);
   }); */
 
-  /* const str = prompt("", "");
-  const products = str.split(", "); // то что ввёл пользователь переводит в массив
-  products.sort(); // сортировка в алфавитном порядке
-  console.log(products.join('; ')); // переводит массив в строку */
+/* const str = prompt("", "");
+const products = str.split(", "); // то что ввёл пользователь переводит в массив
+products.sort(); // сортировка в алфавитном порядке
+console.log(products.join('; ')); // переводит массив в строку */
 
-  // Передача по ссылке или по значению, Spread оператор
+// Передача по ссылке или по значению, Spread оператор
 
 /*   let a = 5,
-      b = a;
+	  b = a;
 
   b = b + 5;
 
@@ -790,8 +790,8 @@ console.log(fib(4));
   console.log(a); */
 
 /*   const obj = {
-    a: 5,
-    b: 1
+	a: 5,
+	b: 1
   };
 
   const copy = obj; // ссылка
@@ -802,36 +802,36 @@ console.log(fib(4));
   console.log(obj); */
 
 /*   function copy(mainObj) {
-    let objCopy = {};
+	let objCopy = {};
 
-    let key;
-    for (key in mainObj) {
-      objCopy[key] = mainObj [key];
-    }
+	let key;
+	for (key in mainObj) {
+	  objCopy[key] = mainObj [key];
+	}
 
-    return objCopy;
+	return objCopy;
   }
 
   const numbers = {
-    a: 2,
-    b: 5,
-    c: {
-        x: 7,
-        y: 4
-    }
+	a: 2,
+	b: 5,
+	c: {
+		x: 7,
+		y: 4
+	}
   };
 
   const newNumbers = copy(numbers);
 
   newNumbers.a = 10; */
-  /* newNumbers.c.x = 10; */
+/* newNumbers.c.x = 10; */
 
 /*   console.log(newNumbers);
   console.log(numbers);
 
   const add = {
-    d: 17,
-    e: 20
+	d: 17,
+	e: 20
   };
 
   const clone = Object.assign({}, add);
@@ -849,15 +849,15 @@ console.log(fib(4));
   console.log(oldArray);
 
   const video = ['youtube', 'vimeo', 'rutube'],
-        blogs = ['wordpress', 'livejournal', 'blogger'],
-        internet = [...video, ...blogs, 'vk', 'facebook'];
+		blogs = ['wordpress', 'livejournal', 'blogger'],
+		internet = [...video, ...blogs, 'vk', 'facebook'];
 
   console.log(internet);
 
   function log(a, b, c) {
-    console.log(a);
-    console.log(b);
-    console.log(c);
+	console.log(a);
+	console.log(b);
+	console.log(c);
   }
 
   const num = [2, 5, 7];
@@ -869,8 +869,8 @@ console.log(fib(4));
   const newAaray = [...array];
 
   const q = {
-    one: 1,
-    two: 2
+	one: 1,
+	two: 2
   };
 
   const newObj = {...q};
@@ -878,30 +878,30 @@ console.log(fib(4));
   console.log(newObj);
   console.log(q); */
 
-const personalPlanPeter = {
+/* const personalPlanPeter = {
   name: "Peter",
   age: "29",
   skills: {
-      languages: ['ru', 'eng'],
-      programmingLangs: {
-          js: '20%',
-          php: '10%'
-      },
-      exp: '1 month', 
+	  languages: ['ru', 'eng'],
+	  programmingLangs: {
+		  js: '20%',
+		  php: '10%'
+	  },
+	  exp: '1 month', 
   }, 
   showAgeAndLangs: function(plan) {
-    const {age} = plan;
-    const {languages} = plan.skills;
-    let str = `Мне ${age} и я владею языками: `;
+	const {age} = plan;
+	const {languages} = plan.skills;
+	let str = `Мне ${age} и я владею языками: `;
 
-    languages.forEach(function(lang) {
-      str += `${lang.toUpperCase()} `;
-    });
+	languages.forEach(function(lang) {
+	  str += `${lang.toUpperCase()} `;
+	});
 
-    console.log(str);
+	console.log(str);
 
   }
-};
+}; */
 
 /* function showExperience(plan) {
   const {exp} = plan.skills;
@@ -910,27 +910,285 @@ const personalPlanPeter = {
 
 showExperience(personalPlanPeter); */
 
-function showProgrammingLangs(plan) {
+/* function showProgrammingLangs(plan) {
   
   let str = '';
   const {programmingLangs} = plan.skills;
   for (let key in programmingLangs) {
-    str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+	str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
   }
 
   return str;
 }
 
-console.log(showProgrammingLangs(personalPlanPeter));
+console.log(showProgrammingLangs(personalPlanPeter)); */
 
 
 
-const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+/* const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 
+let str = '';
 function showFamily(arr) {
-    const str = arr.join( );
+	if(arr.length <= 0) {
+	  str = 'Семья пуста';
+	  return str;
+	} else {
+	  str = 'Семья состоит из: '
+	  let newArr = [...family];
+	  newArr = str + newArr.join(' ');
+	  return newArr;
+	}
 
-    return `Семья состоит из: ${str}`;
+	arr.length === 0 ? str = 'Семья пуста' : str = 'Семья состоит из: ';
+
+	arr.forEach(member => {
+	  str += `${member} `;
+	});
+
+	return str;
+    
 }
 
-console.log(showFamily(family));
+
+console.log(showFamily(family)); */
+
+
+/* const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+	arr.forEach(function(city) {
+	  console.log(city.toLowerCase());
+	});
+}
+
+standardizeStrings(favoriteCities);
+
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+
+  if(typeof(str) === 'string') {
+	return str.split('').reverse().join('');
+  } else {
+	return 'Ошибка!';
+  }
+}
+
+console.log(reverse(someString));
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+  let str = '';
+  arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
+
+  arr.forEach(curr => {
+	if(curr !== missingCurr) {
+	  str += `${curr}\n`;
+	}
+  });
+
+  return str;
+}
+
+console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY'));
+
+// Основы ООП, прототипно-орентированное наследование
+
+const soldier = {
+  health: 400,
+  armor: 100,
+  sayHello: function() {
+	console.log("Hello");
+  }
+};
+
+/* const john = {
+  health: 100
+};
+
+Object.setPrototypeOf(john, soldier); // установили прототип для john от soldier */
+
+/* const john = Object.create(soldier); // создаём объект john, который будет прототипно наследоваться от soldier */
+
+
+/* const personalMovieDB = {
+	'count': 0,
+	'movies': {},
+	'actors': {},
+	'genres': [],
+	'privat': false,
+	start: function () {
+		personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+
+		while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+			personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '1');
+		}
+	},
+	rememberMyFilms: function () {
+		for (let i = 0; i < 2; i++) {
+			const a = prompt('Один из последних просмотренных фильмов?', ''),
+				b = prompt('На сколько оцените его?', '');
+
+			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+				personalMovieDB.movies[a] = b;
+				console.log('done');
+			} else {
+				console.log('error');
+				i--;
+			}
+		}
+	},
+	detectPersonalLevel: function () {
+		if (personalMovieDB.count < 10) {
+			console.log("Просмотрено довольно мало фильмов");
+		} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+			console.log("Вы классический зритель");
+		} else if (personalMovieDB.count >= 30) {
+			console.log("Вы киноман");
+		} else {
+			console.log("Произошла ошибка");
+		}
+	},
+	showMyDB: function (hidden) {
+		if (!hidden) {
+			console.log(personalMovieDB);
+		}
+	},
+	toggleVisibleMyDB: function () {
+		if (personalMovieDB.privat) {
+			personalMovieDB.privat = false;
+		} else {
+			personalMovieDB.privat = true;
+		}
+	},
+	writeYourGenres: function () {
+		for (let i = 1; i <= 3; i++) {
+			const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+
+			if (genre === '' || genre == null) {
+				console.log('Вы ввели некорректные данные или не ввели их вовсе');
+				i--;
+			} else {
+				personalMovieDB.genres[i - 1] = genre;
+			}
+		}
+
+		personalMovieDB.genres.forEach((item, i) => {
+			console.log(`Любимый жанр ${i + 1} - это ${item}`);
+		});
+	}
+};
+
+const shoppingMallData = {
+	shops: [
+		{
+			width: 10,
+			length: 5
+		},
+		{
+			width: 15,
+			length: 7
+		},
+		{
+			width: 20,
+			length: 5
+		},
+		{
+			width: 8,
+			length: 10
+		}
+	],
+	height: 5,
+	moneyPer1m3: 30,
+	budget: 50000
+};
+
+function isBudgetEnough(data) {
+	let square = 0;
+	let fullSize = 0;
+
+	data.shops.forEach(shop => {
+		square += shop.width * shop.length;
+	});
+
+	fullSize += square * data.height;
+
+	if (fullSize * data.moneyPer1m3 > data.budget) {
+		return 'Бюджета недостаточно';
+	} else {
+		return 'Бюджета достаточно';
+	}
+}
+
+console.log(isBudgetEnough(shoppingMallData));
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+	arr.sort();
+	const a = [], b = [], c = [], rest = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		if (i < 3) {
+			a.push(arr[i]);
+		} else if (i < 6) {
+			b.push(arr[i]);
+		} else if (i < 9) {
+			c.push(arr[i]);
+		} else {
+			rest.push(arr[i]);
+		}	
+	}
+
+	return [a,b,c, `Оставшиеся студенты: ${rest.length === 0 ? '-' : rest.join(', ')}`];	
+	
+}
+
+console.log(sortStudentsByGroups(students)); */
+
+// Замыкание
+
+/* let number = 5; debugger
+
+function logNumber() {
+	let number = 4; debugger
+	console.log(number);
+}
+
+number = 6;
+
+logNumber(); debugger */
+
+/* function createCounter() {
+	let counter = 0;
+
+	const myFunction = function() {
+		counter = counter + 1;
+		return counter;
+	};
+
+	return myFunction;
+}
+
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
+
+console.log(c1, c2, c3); */
+
+function createCounter() {
+	let counter = 0;
+
+	const myFunction = function() {
+		counter = counter + 1;
+		return counter;
+	};
+
+	return myFunction;
+}
+
+console.log(createCounter());
